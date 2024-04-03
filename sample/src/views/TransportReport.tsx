@@ -1,9 +1,11 @@
+import { title } from "../data"
+import { matchTable } from "../data"
 
-
-export default function TransportReport() {
+export default function TransportReport(t: title) {
   const a: Array<number> = new Array(31).fill(0).map((i, index) => i+index+1)
   return (
     <div className="main" onClick={e => {e.stopPropagation()}}>
+      <h1>{`${matchTable.transport}${t.year}年${t.month}月`}</h1>
       <table>
         <thead>
           <tr>

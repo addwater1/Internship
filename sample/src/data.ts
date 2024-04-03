@@ -31,3 +31,15 @@ for (let i: number = 0; i<31; i++) {
 }
 
 export default rep
+
+export type title = {
+  document?: string,
+  year?: string,
+  month?: string
+}
+
+export const matchTable = {
+  work: "作業報告書",
+  transport: "交通費申請書",
+  commute: '通勤費申請書'
+}
