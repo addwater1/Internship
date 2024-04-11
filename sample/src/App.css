@@ -15,6 +15,10 @@ th, td {
   text-align: center;
 }
 
+input {
+  width: 100px;
+}
+
 /* ol {
   list-style-type: none;
   padding: 0;
@@ -59,4 +63,25 @@ a::after {
 
 a:visited {
   color: #00e;
+}
+
+.drop-down {
+  position: absolute;
+  background-color: gainsboro;
+  border: solid 1px;
+  min-width: 104px;
+}
+
+.option {
+  cursor: pointer;
+  text-align: start;
+}
+
+.option:hover {
+  background-color: #00e;
+  color: white;
+}
+
+.smart-input-box {
+  text-align: start;
 }

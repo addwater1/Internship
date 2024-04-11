@@ -1,5 +1,6 @@
 import { title } from "../data"
 import { matchTable } from "../data"
+import SmartInput from "./SmartInput"
 
 export default function TransportReport(t: title) {
   const a: Array<number> = new Array(31).fill(0).map((i, index) => i+index+1)
@@ -24,7 +25,7 @@ export default function TransportReport(t: title) {
           {a.map(i => (
             <tr key={i}>
               <td>{i}</td>
-              <td></td>
+              <td><SmartInput /></td>
               <td></td>
               <td></td>
               <td></td>
